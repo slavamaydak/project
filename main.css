@@ -1,0 +1,679 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header__title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.header__button {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.header__button--red {
+  color: red;
+}
+
+.header__buttons {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__ikons {
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon {
+  height: 20px;
+}
+
+.line {
+  border-bottom: 1px solid black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  width: 550px;
+  display: inline-block;
+}
+
+.hero__subtitle {
+  font-family: "Josefin Sans";
+  font-weight: 400px;
+  font-size: 16px;
+  color: #7f7f7f;
+}
+
+.hero__title {
+  font-family: "Cormorant";
+  font-weight: 200;
+  font-size: 42px;
+  color: #292a33;
+  margin: 5px 0px 30px 0px;
+}
+
+.hero__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.hero__text-2 {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 22px;
+  margin: 15px 0px 60px 0px;
+}
+
+.hero__button {
+  color: white;
+  padding: 14px 28px;
+  background-color: #292a33;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Josefin Sans";
+}
+
+.hero__foto__media {
+  display: none;
+}
+
+@media (max-width: 1220px) {
+  .hero__foto {
+    display: none;
+  }
+
+  .hero__foto__media {
+    display: inline;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero__content {
+    margin-left: 30px;
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__title {
+    display: none;
+  }
+
+  .line {
+    margin-bottom: 30px;
+  }
+
+  .hero__content {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__ikons {
+    display: none;
+  }
+
+  .header__buttons {
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__foto__media {
+    display: none;
+  }
+
+  .hero__content {
+    text-align: center;
+    margin-top: 40px;
+    min-width: 350px;
+  }
+}
+
+.category__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category__card {
+  max-width: 360px;
+  max-height: 360px;
+  text-align: center;
+  width: 100%;
+  margin: 2%;
+}
+
+.category__card--shandow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-a__text {
+  font-family: "Cormorant";
+  font-weight: 500;
+  font-size: 26px;
+  margin: 20px 0px 20px 0px;
+}
+
+.card-a__foto {
+  overflow: hidden;
+  width: 100%;
+}
+
+.category__title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 140px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.line--red {
+  border-bottom: 1px solid red;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.category-arrow-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.category-arrow {
+  margin: auto;
+}
+
+.foto-section {
+  background-image: url(foto-section.svg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.foto-section__text {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 6px;
+  margin-top: 40px;
+  margin-right: 80px;
+}
+
+.foto-section__button {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  padding: 14px 28px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  margin-right: 80px;
+}
+
+.deal__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deal__card {
+  display: flex;
+  align-items: center;
+}
+
+.deal-card__content {
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid black;
+  border-left: none;
+  display: inline;
+  width: 100%;
+  overflow: hidden;
+}
+
+.deal-card-title {
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.deal-card__price {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dial__line {
+  border-bottom: 1px solid rgb(197, 197, 197);
+  max-width: 275px;
+  margin: 15px 0px;
+}
+
+.deal-card__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.deal-card__bottom {
+  width: 100%;
+  max-width: 120px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  padding: 8px 14px;
+  background-color: #292a33;
+  letter-spacing: 1.5px;
+  display: inline;
+}
+
+.deal-card__bottoms {
+  max-width: 256px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.deal-card__icons {
+  width: 100%;
+  max-width: 75px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.dial-card__stars {
+  display: block;
+  margin: auto;
+}
+
+.deal__title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 110px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.deal-card__foto {
+  display: inline;
+  width: 100%;
+  max-width: 260px;
+  overflow: hidden;
+}
+
+@media (max-width: 1430px) {
+  .deal__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deal__card {
+    margin: auto;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .deal-card__text {
+    display: none;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__left {
+  background-image: url(banner-left.svg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+
+.banner__left__content {
+  width: 100%;
+  max-width: 204px;
+  margin: 40px 0px 0px 40px;
+}
+
+.banner__left__title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.banner__left__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+.banner__left__buttom {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 14px 28px;
+  gap: 10px;
+  border: 1px solid #292a33;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 187px;
+  margin: 30px 0px 30px 40px;
+}
+
+.banner__right {
+  background-image: url(banner-right.svg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.banner__right__content {
+  max-width: 232px;
+  text-align: right;
+  margin: 40px 40px 0px 0px;
+}
+
+.banner__right__title {
+  font-family: "Cormorant";
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.banner__right__buttom {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 14px 28px;
+  gap: 10px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 187px;
+  margin: 0px 40px 30px 0px;
+}
+
+@media (max-width: 690px) {
+  .banner__left__text {
+    display: none;
+  }
+
+  .banner__left__content {
+    margin: 40px 10px 0px 10px;
+  }
+
+  .banner__left__buttom {
+    margin: 0px 20px 30px 20px;
+  }
+
+  .banner__right__content {
+    margin: 40px 10px 0px 10px;
+  }
+
+  .banner__right__buttom {
+    margin: 0px 20px 30px 20px;
+  }
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.news__card {
+  width: 100%;
+  max-width: 360px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.news__card__foto {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+}
+
+.news__card__content {
+  max-width: 320px;
+  margin: 0px 22px 20px 20px;
+}
+
+.news__card__title {
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 17px 0px;
+}
+
+.news__card__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.news__card__button {
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  text-align: right;
+  margin-right: 22px;
+}
+
+.news__card__content--last {
+  margin-bottom: 66px;
+}
+
+@media (max-width: 910px) {
+  .news__card--last {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .news__card--second {
+    display: none;
+  }
+
+  .news__card {
+    margin: auto;
+  }
+}
+
+.bruden {
+  display: flex;
+}
+
+.bruden__content {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid black;
+  padding: 40px 0px;
+}
+
+.bruden__wrap {
+  max-width: 205px;
+  margin: auto;
+}
+
+.bruden__title {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  gap: 15px;
+}
+
+.bruden__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0px 30px 0px;
+}
+
+.bruden__buttom {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  color: black;
+  text-decoration: none;
+  padding: 14px 28px;
+  border: 1px solid black;
+}
+
+.bruden__img {
+  width: 100%;
+  max-width: 860px;
+  border: 1px solid black;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 850px) {
+  .bruden {
+    display: none;
+  }
+}
+
+.sub__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sub__block {
+  max-width: 560px;
+  display: flex;
+  margin: auto;
+}
+
+.sub__buttom {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 28px;
+  background-color: #292a33;
+  color: white;
+}
+
+.sub__input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 387px;
+  height: 46px;
+  border: 1px solid #292a33;
+  border-radius: 0px;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+@media (max-width: 580px) {
+  .sub__block {
+    margin: 0px 20px;
+  }
+}
